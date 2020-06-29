@@ -6,5 +6,10 @@ router.get('/workouts', (req,res)=> {
     Workouts.find().then(data=> res.json(data)).catch(err=>console.log(err))
 });
 
+router.get('/stats', (req,res)=> {
+    console.log("getting info")
+    Workouts.find().then(data=> res.json(data)).catch(err=>console.log(err))
+});
+
 
 module.exports = router;
